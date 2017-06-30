@@ -1,0 +1,6 @@
+CITY Gothenburg Sweden 500000
+CITY Stockholm Sweden 1500000
+CITY Berlin Germany 3000000
+TOWN Ystad Sweden 50000
+ROAD Ystad Sweden Gothenburg Sweden
+ROAD Ystad Sweden Berlin Germany

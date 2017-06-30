@@ -1,0 +1,8 @@
+Relation R = {countryName, hotelCountry, areaToCountry, areaFromCountry, citizenCountry,  areaName, areaPopulation, roadTax, areaTo, areaFrom, hotelName, hotelPrice, pNumber, personName, budget, language}
+
+FD:
+
+1. (areaName, areaToCountry, areaFromCountry, citizenCountry, pNumber, areaTo, areaFrom)-> roadTax
+2. (pNumber, areaName, hotelCountry, citizenCountry) -> hotelName, hotelPrice
+3. (pNumber, citizenCountry) -> personName, budget, language
+4. (areaName, countryName) -> areaPopulation

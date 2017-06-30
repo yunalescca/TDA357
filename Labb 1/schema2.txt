@@ -1,0 +1,1 @@
+What we have on the LHS in our FDs are our keys in schema1. The attributes on the LHS in our FDs give us the attributes on the RHS, which are the non-key attributes in schema1. Therefore we didn’t update our schema because they correspond well.

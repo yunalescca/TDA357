@@ -1,0 +1,29 @@
+Country (_name)
+
+Area(_name, population, _countryName)
+	countryName -> Country.name
+
+City(_name, _country)
+	(name,country) -> Area.(name, countryName)
+
+Town(_name, _country)
+	(name,country) -> Area.(name, countryName)
+
+Person(_pnumber, name, budget, areaName, _citizenCountry, _locatedInCountry)
+	(areaName, locatedInCountry) -> Area.(name, countryName)
+	citizenCountry -> Country.name
+	
+OwnsHotelIn (price, name, _pnumber, _area, _hotelCountry, _personCountry)
+	(pnumber, personCountry) -> Person.(pnumber, country)
+	(area, hotelCountry) -> Area.(name, country)
+	
+Knows(_pnumber, _language, _personCountry)
+	(pnumber, personCountry) -> Person.(pnumber, citizenCountry)
+	language -> Language.name
+
+Language(_name)
+
+RoadOwnedBy(roadtax, _areaTo, _areaFrom, pnumber, _areaToCountry, _areaFromCountry)
+	(areaTo, areaToCountry) -> Area.(name, countryName)
+	(areaFrom, areaFromCountry) -> Area.(name, countryName)
+	pnumber -> Person.pnumber
